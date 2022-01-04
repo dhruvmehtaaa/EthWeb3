@@ -1,21 +1,15 @@
-import { useState } from 'react'
-import { Navbar, Footer, Welcome, Services, Transactions, Loader } from './components';
+import { Navbar, Welcome, Footer, Services, Transactions } from "./components";
 
-
-const App = () => {
-
-
-  return (
-    <div className="min-h-screen">
-      <h1 className="gradient-bg-welcome">
-        <Navbar />
-        <Welcome />
-      </h1>
-      <Services />
-      <Transactions />
-      <Footer />
+const App = () => (
+  <div className="min-h-screen">
+    <div className="gradient-bg-welcome">
+      <Navbar />
+      <Welcome />
     </div>
-  )
-}
+    <Services />
+    <Transactions />
+    <Footer />
+  </div>
+);
 
-export default App
+export default App;
